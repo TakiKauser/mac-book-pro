@@ -106,7 +106,7 @@ document.getElementById("promo-apply-btn").addEventListener("click", function ()
     // get total price
     const totalPrice = parseInt(document.getElementById("total-price").innerText);
     // calculate discount price
-    const discountPrice = (totalPrice - (totalPrice / 20));
+    const discountPrice = (totalPrice - (totalPrice / 5));
     // call function to verify promocode
     const verification = verifyPromoCode();
     if (verification) {
