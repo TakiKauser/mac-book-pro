@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MacBook Pro!</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- header -->
+    <header></header>
+    <!-- main starts -->
+    <main>
+        <section class="container">
+            <div class="row d-flex justify-content-around align-items-center">
+                <!-- product image -->
+                <div class="col-md-6">
+                    <h1 class="text-secondary mb-4">
+                        Your desired Macbook pro is available, now!
+                    </h1>
+                    <img src="images/mac.png" alt="" title="Macbook Pro!" height="400" />
+                </div>
+                <div class="col-md-6">
+                    <div class="mt-2">
+                        <!-- product description -->
+                        <h2>Customize your Blue 24-inch iMac with Apple M1 chip.</h2>
+                        <article>
+                            Apple M1 chip with 8-core performance cores and efficiency
+                            cores, 7-core GPU. and 16-core Neural Engine 8GB unified memory
+                            256 GB SSD storage Two Thunderbolt/USB 4 ports Magic
+                            Keyboard-US-English.
+                        </article>
+                    </div>
+                    <div class="my-3">
+                        <div class="mb-2">
+                            <!-- memory configurations -->
+                            <h5>Memory</h5>
+                            <button id="default-memory" class="btn btn-outline-secondary me-2">
+                                8GB unified memory
+                            </button>
+                            <button id="extended-memory" class="btn btn-outline-secondary me-2">
+                                16GB unified memory
+                            </button>
+                        </div>
+                        <div class="mb-2">
+                            <!-- storage configurations -->
+                            <h5>Storage</h5>
+                            <button id="default-ssd" class="btn btn-outline-secondary me-2">
+                                256GB SSD storage
+                            </button>
+                            <button id="first-extended-ssd" class="btn btn-outline-secondary me-2">
+                                512GB SSD storage
+                            </button>
+                            <button id="second-extended-ssd" class="btn btn-outline-secondary me-2">
+                                1TB SSD storage
+                            </button>
+                        </div>
+                        <div class="mb-2">
+                            <h5>Choose your delivery option</h5>
+                            <!-- delivery options -->
+                            <button id="free-delivery" class="btn btn-outline-secondary me-2">
+                                Friday, Aug 25 FREE Prime Delivery
+                            </button>
+                            <button id="chargable-delivery" class="btn btn-outline-secondary me-2">
+                                Friday, Aug 21 Delivery Charge $20
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- cost calculation table -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Best Price</th>
+                                    <th scope="col">$<span id="best-price">1299</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Extra Memory Cost</th>
+                                    <!-- <td>Extra Memory Cost</td> -->
+                                    <td>$<span id="memory-price">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extra Storage Cost</th>
+                                    <td>$<span id="storage-price">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Delivery Charge</th>
+                                    <td colspan="2">$<span id="delivery-charge">0</span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Total Price</th>
+                                    <th colspan="2">$<span id="total-price">1299</span></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="mt-2">
+                        <!-- promo code -->
+                        <h5>Add Promo Code</h5>
+                        <input class="p-2" type="text" value="" placeholder="Promo Code: 'stevekaku'" />
+                        <button id="promo-apply-btn" class="btn btn-danger ms-2 text-white">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <!-- promo code applied total -->
+                <hr />
+                <h2 class="text-center">
+                    Total: $<span id="promo-applied-price">1299</span>
+                </h2>
+            </div>
+        </section>
+    </main>
+    <!-- main ends -->
+
+    <!-- footer -->
+    <footer></footer>
+
+    <!-- javascript links -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
