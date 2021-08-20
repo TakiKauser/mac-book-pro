@@ -91,8 +91,6 @@ function verifyPromoCode() {
     if (userInput == "stevekaku") {
         // clear user input field
         document.getElementById("promo-code").value = "";
-        // button disabled to prevent frequent apply
-        document.getElementById("promo-apply-btn").setAttribute("disabled", "true");
         return true;
     }
     else {
